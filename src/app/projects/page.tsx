@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Link from "next/link"
 import { Calendar, MapPin } from "lucide-react"
+import Image from "next/image"
 
 const projects = [
   {
@@ -80,14 +81,11 @@ export default function ProjectsPage() {
         <div className="container mx-auto px-4">
           {/* Hero Section */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Our Projects
-            </h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Projects</h2>
             <div className="w-24 h-1 bg-blue-700 mx-auto mb-6"></div>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Discover our portfolio of successful electrical projects across
-              Pakistan. From residential complexes to industrial installations,
-              we deliver excellence in every project.
+              Discover our portfolio of successful electrical projects across Pakistan. From residential complexes to
+              industrial installations, we deliver excellence in every project.
             </p>
           </div>
 
@@ -98,11 +96,13 @@ export default function ProjectsPage() {
                 key={project.id}
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
               >
-                <div className="relative h-64 overflow-hidden">
-                  <img
+                {/* ✅ Optimized Image */}
+                <div className="relative h-64 w-full overflow-hidden">
+                  <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                    fill
+                    className="object-cover transition-transform duration-300 hover:scale-110"
                   />
                   <div className="absolute top-4 right-4">
                     <span
@@ -124,13 +124,9 @@ export default function ProjectsPage() {
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 overflow-hidden">
-                    {project.title}
-                  </h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 overflow-hidden">{project.title}</h3>
 
-                  <p className="text-gray-600 mb-4 leading-relaxed overflow-hidden">
-                    {project.description}
-                  </p>
+                  <p className="text-gray-600 mb-4 leading-relaxed overflow-hidden">{project.description}</p>
 
                   <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
                     <div className="flex items-center gap-1">

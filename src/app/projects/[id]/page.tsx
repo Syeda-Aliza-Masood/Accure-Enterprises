@@ -2,6 +2,7 @@ import Navbar from "@/app/components/Navbar"
 import Footer from "@/app/components/Footer"
 import Link from "next/link"
 import { ArrowLeft, Calendar, MapPin, Users, CheckCircle, Clock } from "lucide-react"
+import Image from "next/image"  
 
 const projectsData = {
   "residential-complex": {
@@ -252,7 +253,15 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
 
           {/* Hero Section */}
           <div className="relative h-96 rounded-2xl overflow-hidden mb-12">
-            <img src={project.image || "/placeholder.svg"} alt={project.title} className="w-full h-full object-cover" />
+            <div className="relative h-96 w-full mb-8">
+          <Image
+            src={project.image || "/placeholder.svg"}
+            alt={project.title}
+            fill
+            className="object-cover rounded-lg shadow-lg"
+            priority
+          />
+        </div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent">
               <div className="absolute bottom-8 left-8 text-white">
                 <div className="flex items-center gap-4 mb-4">

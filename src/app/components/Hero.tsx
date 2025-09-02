@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 const services = [
   {
@@ -46,12 +47,10 @@ const services = [
 export default function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0)
 
-  // Auto-advance slides every 5 seconds
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % services.length)
     }, 5000)
-
     return () => clearInterval(timer)
   }, [])
 
@@ -78,21 +77,30 @@ export default function HeroSlider() {
           }`}
         >
           <div className="absolute inset-0 bg-black/40 z-10" />
-          <img src={service.image || "/placeholder.svg"} alt={service.title} className="w-full h-full object-cover" />
+          <Image
+            src={service.image || "/placeholder.svg"}
+            alt={service.title}
+            fill
+            className="object-cover"
+            priority={index === currentSlide} // optimization for current slide
+          />
         </div>
       ))}
 
       {/* Content Overlay */}
       <div className="relative z-20 flex items-center justify-center h-full">
         <div className="text-center text-white max-w-4xl px-6">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">{services[currentSlide].title}</h1>
-          <p className="text-xl md:text-2xl mb-8 text-balance opacity-90">{services[currentSlide].description}</p>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">
+            {services[currentSlide].title}
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 text-balance opacity-90">
+            {services[currentSlide].description}
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            {/* Updated Buttons */}
             <Button
               size="lg"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3"
-              onClick={() => window.location.href = "/services"}
+              onClick={() => (window.location.href = "/services")}
             >
               Get Started
             </Button>
@@ -101,7 +109,7 @@ export default function HeroSlider() {
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-slate-900 px-8 py-3 bg-transparent"
-              onClick={() => window.location.href = "/projects"}
+              onClick={() => (window.location.href = "/projects")}
             >
               Learn More
             </Button>
@@ -133,7 +141,9 @@ export default function HeroSlider() {
             key={index}
             onClick={() => goToSlide(index)}
             className={`w-3 h-3 rounded-full transition-all duration-200 ${
-              index === currentSlide ? "bg-white scale-125" : "bg-white/50 hover:bg-white/75"
+              index === currentSlide
+                ? "bg-white scale-125"
+                : "bg-white/50 hover:bg-white/75"
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

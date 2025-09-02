@@ -26,7 +26,7 @@ export default function ContactPage() {
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Contact Information</h2>
                 <p className="text-gray-600 mb-8">
-                  We're here to help with all your electrical needs. Reach out to us through any of the following
+                  We are here to help with all your electrical needs. Reach out to us through any of the following
                   channels.
                 </p>
               </div>

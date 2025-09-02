@@ -3,6 +3,7 @@ import Footer from "./components/Footer"
 import HeroSlider from "./components/Hero"
 import { Zap, Shield, Users, Award, Phone, Mail } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"  
 
 export default function Home() {
   return (
@@ -74,7 +75,13 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img src="/services/1.png" alt="Surveillance Systems" className="w-full h-48 object-cover" />
+              <Image
+                src="/services/1.png"
+                alt="Surveillance Systems"
+                width={600}
+                height={400}
+                className="w-full h-48 object-cover"
+              />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Surveillance Systems</h3>
                 <p className="text-gray-600 mb-4">
@@ -87,7 +94,13 @@ export default function Home() {
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img src="/services/2.png" alt="Solar Solutions" className="w-full h-48 object-cover" />
+              <Image
+                src="/services/2.png"
+                alt="Solar Solutions"
+                width={600}
+                height={400}
+                className="w-full h-48 object-cover"
+              />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Solar Solutions</h3>
                 <p className="text-gray-600 mb-4">
@@ -100,9 +113,11 @@ export default function Home() {
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img
+              <Image
                 src="/services/3.png"
                 alt="Electrical Distribution"
+                width={600}
+                height={400}
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
@@ -110,10 +125,7 @@ export default function Home() {
                 <p className="text-gray-600 mb-4">
                   Professional electrical panel installations and power distribution systems.
                 </p>
-                <Link
-                  href="/services/3"
-                  className="text-blue-700 hover:text-blue-800 font-medium"
-                >
+                <Link href="/services/3" className="text-blue-700 hover:text-blue-800 font-medium">
                   Learn More →
                 </Link>
               </div>

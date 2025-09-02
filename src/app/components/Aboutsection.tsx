@@ -77,7 +77,7 @@ export default function AboutSection() {
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Our Mission</h3>
             <p className="text-gray-600 text-center leading-relaxed">
-              To provide safe, reliable, and innovative electrical solutions that exceed our clients' expectations while
+              To provide safe, reliable, and innovative electrical solutions that exceed our clients expectations while
               maintaining the highest standards of professionalism and integrity.
             </p>
           </div>
