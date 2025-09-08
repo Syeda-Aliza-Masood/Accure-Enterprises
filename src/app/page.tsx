@@ -40,7 +40,7 @@ export default function Home() {
                 <Shield className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Safety First</h3>
-              <p className="text-gray-600">Safety Without Compromise.</p>
+              <p className="text-gray-600">Safety Without Compromise</p>
             </div>
 
             <div className="text-center group">
@@ -48,7 +48,7 @@ export default function Home() {
                 <Users className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">24/7 Support</h3>
-              <p className="text-gray-600">Always Here for You .</p>
+              <p className="text-gray-600">Always Here for You </p>
             </div>
 
             <div className="text-center group">
@@ -56,7 +56,7 @@ export default function Home() {
                 <Award className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Quality Assured</h3>
-              <p className="text-gray-600">Excellence You Can Trust .</p>
+              <p className="text-gray-600">Excellence You Can Trust </p>
             </div>
           </div>
         </div>
