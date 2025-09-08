@@ -20,8 +20,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Accure Enterprises?</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              With years of experience and a commitment to excellence, we deliver reliable electrical solutions that
-              power your success.
+             With years of experience and a commitment to excellence, we deliver reliable and innovative solutions in electrical, solar, surveillance, lighting, automation, and fabrication—empowering your success. 
             </p>
           </div>
 
@@ -32,7 +31,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Expert Team</h3>
               <p className="text-gray-600">
-                Certified electricians with extensive experience in all electrical services.
+                Skilled & Certified Professionals 
               </p>
             </div>
 
@@ -41,7 +40,7 @@ export default function Home() {
                 <Shield className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Safety First</h3>
-              <p className="text-gray-600">Strict adherence to safety protocols and industry standards.</p>
+              <p className="text-gray-600">Safety Without Compromise.</p>
             </div>
 
             <div className="text-center group">
@@ -49,7 +48,7 @@ export default function Home() {
                 <Users className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">24/7 Support</h3>
-              <p className="text-gray-600">Round-the-clock customer support for emergency electrical services.</p>
+              <p className="text-gray-600">Always Here for You .</p>
             </div>
 
             <div className="text-center group">
@@ -57,7 +56,7 @@ export default function Home() {
                 <Award className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Quality Assured</h3>
-              <p className="text-gray-600">Premium materials and workmanship with comprehensive warranties.</p>
+              <p className="text-gray-600">Excellence You Can Trust .</p>
             </div>
           </div>
         </div>
@@ -172,7 +171,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Power Your Project?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Get in touch with our expert team for a free consultation and quote on your electrical needs.
+            Contact us today for a free consultation and quote on your electrical, solar, surveillance, lighting, automation, or fabrication project. 
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">

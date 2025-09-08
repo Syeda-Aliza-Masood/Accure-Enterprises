@@ -25,8 +25,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-base leading-relaxed mt-4">
-              Accure Enterprises is a trusted name in electrical solutions, delivering high-quality
-              products and reliable services to power your homes and businesses.
+              Accure Enterprises is a trusted name in technology solutions, delivering high-quality products and reliable services in electrical, solar, surveillance, lighting, automation, and custom fabrication to power homes, businesses, and industries.
             </p>
           </div>
 

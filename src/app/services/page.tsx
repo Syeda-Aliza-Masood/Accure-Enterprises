@@ -59,7 +59,7 @@ export default function ServicesPage() {
           <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
           <div className="w-24 h-1 bg-blue-700 mx-auto mb-6"></div>
-            <p className="text-gray-600 text-lg">Professional electrical solutions for all your needs</p>
+            <p className="text-gray-600 text-lg">Comprehensive electrical, solar, surveillance, lighting, automation, and fabrication solutions tailored to residential, commercial, and industrial needs. </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">

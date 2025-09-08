@@ -9,9 +9,9 @@ export default function AboutSection() {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About</h2>
           <div className="w-24 h-1 bg-blue-700 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Accure Enterprises is a leading electrical contracting company with over a decade of experience in providing
-            comprehensive electrical solutions. We specialize in residential, commercial, and industrial electrical
-            services, ensuring safety, reliability, and excellence in every project.
+            Accure Enterprises is a trusted technology solutions company with over a decade of expertise in delivering reliable and innovative services. Our core offerings include Surveillance Systems, Solar Solutions, Electrical Distribution, Lighting Systems, Industrial Automation, and Custom Fabrication. We cater to residential, commercial, and industrial sectors, ensuring safety, efficiency, and excellence in every project. 
+
+ 
           </p>
         </div>
 
@@ -20,9 +20,10 @@ export default function AboutSection() {
           <div>
             <h3 className="text-2xl font-semibold text-gray-900 mb-4">Our Expertise</h3>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              Founded with a commitment to electrical excellence, Accure Enterprises has grown to become a trusted name
-              in the electrical industry. Our team of certified electricians brings years of experience and technical
-              expertise to every project.
+              Our Expertise 
+Founded with a commitment to technical excellence, Accure Enterprises has grown into a trusted name in delivering advanced electrical and technology solutions. Our team of certified professionals brings years of experience and specialized knowledge to every project. 
+
+From residential wiring and lighting systems to solar power solutions, surveillance systems, industrial automation, and custom fabrication, we handle projects of all scales with the same dedication and precision. By leveraging the latest technology and adhering to industry best practices, we ensure that every solution we deliver meets the highest standards of safety, efficiency, and reliability. 
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
               From simple residential wiring to complex industrial installations, we handle projects of all sizes with
@@ -77,8 +78,7 @@ export default function AboutSection() {
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Our Mission</h3>
             <p className="text-gray-600 text-center leading-relaxed">
-              To provide safe, reliable, and innovative electrical solutions that exceed our clients expectations while
-              maintaining the highest standards of professionalism and integrity.
+              To provide safe, reliable, and innovative solutions in electrical, solar, surveillance, lighting, automation, and fabrication—exceeding client expectations while upholding the highest standards of professionalism, integrity, and excellence. 
             </p>
           </div>
 
@@ -88,8 +88,7 @@ export default function AboutSection() {
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Our Vision</h3>
             <p className="text-gray-600 text-center leading-relaxed">
-              To be the leading electrical contracting company in the region, recognized for our technical expertise,
-              customer service excellence, and commitment to sustainable practices.
+              To be the region’s leading provider of integrated technology and energy solutions—recognized for our technical expertise, customer service excellence, and commitment to sustainability. 
             </p>
           </div>
 

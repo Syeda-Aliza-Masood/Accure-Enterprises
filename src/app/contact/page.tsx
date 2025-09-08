@@ -15,8 +15,7 @@ export default function ContactPage() {
             </h2>
             <div className="w-24 h-1 bg-blue-700 mx-auto mb-6"></div>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Ready to power up your project? Contact Accure Enterprises today for professional electrical solutions
-              tailored to your needs.
+              Ready to power up your project? Contact Accure Enterprises today for professional solutions in electrical, solar, surveillance, lighting, automation, and fabrication—tailored to your needs. 
             </p>
           </div>
 
@@ -176,7 +175,7 @@ export default function ContactPage() {
           <div className="mt-16 text-center bg-blue-700 text-white p-12 rounded-xl">
             <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
             <p className="text-xl mb-6 opacity-90">
-              Contact us today for a free consultation and quote for your electrical project.
+              With years of experience and a commitment to excellence, we deliver reliable solutions that empower your success 
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
